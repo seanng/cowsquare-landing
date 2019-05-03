@@ -11,14 +11,15 @@
 	<link href="css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/theme-hyperblue.css" rel="stylesheet" type="text/css" media="all">
 	<link
 		href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600'
 		rel='stylesheet' type='text/css'>
-	<link class="vmx" href="http://fonts.googleapis.com/css?family=Roboto:100,300,400,600,700" rel="stylesheet"
-		type="text/css">
-	<link class="vmx" href="../css/font-roboto.css" rel="stylesheet" type="text/css">
-
 	<style>
+		/* h4 {
+			font-family: Lato;Raleway;
+		} */
+
 		.nav-bar {
 			height: 75px;
 			max-height: none;
@@ -35,6 +36,10 @@
 
 		.image-square .background-image-holder:first-child {
 			background-position-x: 0 !important;
+		}
+
+		.jumbotron {
+			height: 100vh;
 		}
 
 		@media (max-width: 767px) {
@@ -57,7 +62,6 @@
 				font-size: 32px;
 			}
 		}
-
 	</style>
 </head>
 
@@ -376,16 +380,14 @@
 	</div>
 
 	<div class="main-container">
-		<section class="image-bg overlay pt240 pb240 pt-xs-180 pb-xs-180 parallax">
+		<section class="jumbotron image-bg overlay pt240 pb240 pt-xs-180 pb-xs-180 parallax">
 			<div class="background-image-holder">
-				<img alt="image" class="background-image" src="img/animal-animal-photography-blur-231062 (1).jpg">
+				<img alt="image" class="background-image" src="img/main_bg.jpg">
 			</div>
-			<div class="container pb96 pt48">
+			<div class="container pb0 pt40">
 				<div class="row">
 					<div class="col-sm-5">
-						<h1 class="mb0 bold">We bring clarity to your team.</h1>
-						<h4 class="mb32 mt16">Helping organizations to build communities with technology.</h4>
-						<p class="lead mb0"> </p>
+						<h1 class="mb0 bold thin">We bring clarity to your team.</h1>
 					</div>
 				</div>
 
@@ -393,57 +395,67 @@
 
 		</section>
 
-		<section>
+		<section class="pt180 pb180 pt-xs-80 pb-xs-80">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
-						<h4 class="uppercase mb16">Our story</h4>
-						<p class="lead mb80">
-							Backed by <b>Y Combinator</b>.
+					<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+						<!-- <h1 class="text-center thin mb40">Who are we?</h1> -->
+						<h4 class="mb48">
+							Cow Square is a powerful yet highly configurable cloud-based system that acts as a central source of truth for organizations and their members. 
+						</h4>
+						<hr />
+						<br>
+						<p class="lead text-justify">
+							As database experts, we understand that there is no one-size-fits-all system as every organization has their own way of managing records and data. With that mantra, we are unique in this space as we offer a highly curated and customized product with our feature-rich system. We want to create the perfect record management system for your organization.
 							<br>
-							They have backed the likes of Airbnb, Dropbox and Stripe.
 							<br>
-							<br>
-							Part of <b>Apptask</b> Group, where we have served Fortune 500 enterprise clients.<br>
+							Cow Square is a part of Branch8, a YC15 company. YC is the world’s leading accelerator, who of which have also backed the likes of Airbnb, Dropbox and Stripe.
 						</p>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="image-square left">
+		<section class="pt240 pb240 pt-xs-80 pb-xs-80 parallax">
+                <div class="background-image-holder fadeIn" style="transform: translate3d(0px, 149.5px, 0px); background: url(&quot;img/music2.jpg&quot;);">
+                    <img alt="image" class="background-image" src="img/capital3.jpg" style="display: none;">
+                </div>
+            </section>
+		<section class="image-square right mb48 pb80 mt80">
 			<div class="col-md-6 image">
 				<div class="background-image-holder">
-					<img alt="image" class="background-image" src="img/profile management@2x.jpg">
-				</div>
-			</div>
-			<div class="col-md-6 col-md-offset-1 content">
-				<h3>Profile Management System<br></h3>
-				<p class="mb0 lead">Branch8 helps community-based companies display their database of information on
-					their
-					own websites that are publicly or privately available.
-					<br>
-					<br>
-					Database such as members, customers orevents.
-				</p>
-			</div>
-		</section>
-		<section class="image-square right mb48">
-			<div class="col-md-6 image">
-				<div class="background-image-holder">
-					<img alt="image" class="background-image" src="img/small2.jpg">
+					<img alt="image" class="background-image" src="img/profile management@2x.png">
 				</div>
 			</div>
 			<div class="col-md-6 content">
-				<h3>Ecommerce Software Development<br></h3>
-				<p class="mb0 lead">We also help organizations to design and build websites with payments and shopping
-					carts.<br></p>
+					<h2>Profile Management System<br></h2>
+					<p class="mb0 lead">Branch8 helps community-based companies display their database of information on
+						their
+						own websites that are publicly or privately available.
+						<br>
+						<br>
+						Database such as members, customers orevents.
+					</p>
 			</div>
 		</section>
-		<section class="pb0">
+		<!-- <section class="image-square left">
+			<div class="col-md-6 image">
+				<div class="background-image-holder">
+					<img alt="image" class="background-image" src="img/profile management@2x.png">
+				</div>
+			</div>
+			<div class="col-md-6 col-md-offset-1 content">
+					<h2>Ecommerce Software Development<br></h2>
+					<p class="mb0 lead">We also help organizations to design and build websites with payments and shopping
+						carts.<br>
+					</p>
+				
+			</div>
+		</section> -->
+		<section class="pb0 mt40">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-10 col-sm-offset-1 text-center">
-						<h3 class="uppercase color-primary mb40 mb-xs-24">Features</h3>
+						<h3 class="uppercase mb40 mb-xs-24 color-primary">Features</h3>
 					</div>
 				</div>
 
@@ -561,7 +573,7 @@
 			<div class=" container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 col-sm-12 text-center">
-						<h4 class="uppercase mb80">Use cases</h4>
+						<h3 class="uppercase mb80">Use cases</h3>
 						<div class="tabbed-content icon-tabs">
 							<ul class="tabs">
 

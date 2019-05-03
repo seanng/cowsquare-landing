@@ -1,0 +1,3 @@
+function synthWave () {
+  new Date 
+}

@@ -1,3 +1,0 @@
-function synthWave () {
-  new Date 
-}

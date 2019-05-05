@@ -16,10 +16,9 @@
 		href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600'
 		rel='stylesheet' type='text/css'>
 	<style>
-		/* h4 {
-			font-family: Lato;Raleway;
-		} */
-
+		.color-black {
+			color: #000 !important;
+		}
 		.nav-bar {
 			height: 75px;
 			max-height: none;
@@ -30,11 +29,11 @@
 			height: 75px;
 		}
 
-		.overlay:before {
-			opacity: .5;
+		.jumbotron.overlay:before {
+			opacity: 0.1;
 		}
 
-		.image-square .background-image-holder:first-child {
+		.image-square .background-image-holder {
 			background-position-x: 0 !important;
 		}
 
@@ -43,6 +42,14 @@
 		}
 
 		@media (max-width: 767px) {
+			.image-bg .background-image-holder {
+				background-position: 40% 50% !important;
+			}
+
+			.image-square .background-image-holder {
+				background-repeat: no-repeat !important;
+			}
+
 			p.lead {
 				font-size: 14px;
 				font-weight: 400;
@@ -75,8 +82,8 @@
 			<div class="nav-bar">
 				<div class="module left">
 					<a href="index.html">
-						<img class="logo logo-light" alt="Foundry" src="img/logo-light.png">
-						<img class="logo logo-dark" alt="Foundry" src="img/logo-dark.png">
+						<img class="logo logo-light" alt="Foundry" src="img/logo-dark.svg">
+						<img class="logo logo-dark" alt="Foundry" src="img/logo-dark.svg">
 					</a>
 				</div>
 				<!-- <div class="module widget-handle mobile-toggle right visible-sm visible-xs">
@@ -384,10 +391,10 @@
 			<div class="background-image-holder">
 				<img alt="image" class="background-image" src="img/main_bg.jpg">
 			</div>
-			<div class="container pb0 pt40">
+			<div class="container pb0 pt40 pt-xs-24">
 				<div class="row">
-					<div class="col-sm-5">
-						<h1 class="mb0 bold thin">We bring clarity to your team.</h1>
+					<div class="col-sm-5 col-xs-6">
+						<h1 class="mb0 thin color-black">A central source of truth for your team.</h1>
 					</div>
 				</div>
 
@@ -395,31 +402,29 @@
 
 		</section>
 
-		<section class="pt180 pb180 pt-xs-80 pb-xs-80">
+		<section class="pt96 pb96 pt-xs-80">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
 						<!-- <h1 class="text-center thin mb40">Who are we?</h1> -->
-						<h4 class="mb48">
-							Cow Square is a powerful yet highly configurable cloud-based system that acts as a central source of truth for organizations and their members. 
-						</h4>
-						<hr />
-						<br>
+						<h3 class="mb48">
+							Cow Square brings <span class="color-primary">clarity</span> to your team.
+						</h3>
 						<p class="lead text-justify">
-							As database experts, we understand that there is no one-size-fits-all system as every organization has their own way of managing records and data. With that mantra, we are unique in this space as we offer a highly curated and customized product with our feature-rich system. We want to create the perfect record management system for your organization.
-							<br>
-							<br>
-							Cow Square is a part of Branch8, a YC15 company. YC is the world’s leading accelerator, who of which have also backed the likes of Airbnb, Dropbox and Stripe.
+							As database experts, we understand that there is no one-size-fits-all system for every organization. With that mantra, we’ve created a highly customized and feature-rich database system. We want to create the perfect record management system for your organization. 
+						</p>
+						<p class="lead text-justify">
+							Cow Square is a part of Branch8, a <b>Y Combinator 2015</b> company. Y Combinator is the world’s leading accelerator, who of which have also backed the likes of Airbnb, Dropbox and Stripe.
 						</p>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="pt240 pb240 pt-xs-80 pb-xs-80 parallax">
-                <div class="background-image-holder fadeIn" style="transform: translate3d(0px, 149.5px, 0px); background: url(&quot;img/music2.jpg&quot;);">
-                    <img alt="image" class="background-image" src="img/capital3.jpg" style="display: none;">
-                </div>
-            </section>
+		<section class="pt240 pb240 pt-xs-80 pb-xs-80 parallax hidden-xs">
+			<div class="background-image-holder fadeIn" style="transform: translate3d(0px, 149.5px, 0px); background: url(&quot;img/music2.jpg&quot;);">
+					<img alt="image" class="background-image" src="img/capital3.jpg" style="display: none;">
+			</div>
+		</section>
 		<section class="image-square right mb48 pb80 mt80">
 			<div class="col-md-6 image">
 				<div class="background-image-holder">
@@ -569,83 +574,74 @@
 			</div>
 		</section>
 
-		<section class="pt0">
-			<div class=" container">
+		<section class="image-bg bg-dark parallax overlay pt160 pb160 pt-xs-40 pb-xs-40">
+			<div class="background-image-holder">
+				<img alt="Background Image" class="background-image" src="https://images.pexels.com/photos/325876/pexels-photo-325876.jpeg" />
+			</div>
+			<div class="container">
 				<div class="row">
-					<div class="col-md-8 col-md-offset-2 col-sm-12 text-center">
-						<h3 class="uppercase mb80">Use cases</h3>
-						<div class="tabbed-content icon-tabs">
-							<ul class="tabs">
-
-								<li class="active">
-									<div class="tab-title">
-										<i class="icon et-line-toolbox"></i>
-										<span>Businesses</span>
-									</div>
-									<div class="tab-content">
-										<p class="lead">
-											Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-											consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt
-											ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
-											veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi
-											ut aliquid ex ea commodi consequatur?
-										</p>
-									</div>
-								</li>
-								<li>
-									<div class="tab-title">
-										<i class="icon et-line-heart"></i>
-										<span>Non-Profits</span>
-									</div>
-									<div class="tab-content">
-										<p class="lead">
-											Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-											consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt
-											ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
-											veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi
-											ut aliquid ex ea commodi consequatur?
-										</p>
-									</div>
-								</li>
-								<li>
-									<div class="tab-title">
-										<i class="icon et-line-tools"></i>
-										<span>Education Centers<br></span>
-									</div>
-									<div class="tab-content">
-										<p class="lead">
-											At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-											praesentium voluptatum deleniti atque corrupti quos dolores et quas
-											molestias excepturi sint occaecati cupiditate non provident, similique sunt
-											in culpa qui officia deserunt mollitia animi, id est laborum et dolorum
-											fuga. Et harum quidem rerum facilis est.
-										</p>
-									</div>
-								</li>
-								<li>
-									<div class="tab-title">
-										<i class="icon et-line-global"></i>
-										<span>Associations<br></span>
-									</div>
-									<div class="tab-content">
-										<p class="lead">
-											Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit
-											quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda
-											est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis
-											debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae
-											sint et molestiae non recusandae.
-										</p>
-									</div>
-								</li>
-							</ul>
-						</div>
-
+					<div class="col-sm-12 text-center">
+						<h2 class="uppercase mb8">Businesses</h2>
+						<p class="lead mb40">A brief description of the tour.</p>
+						<a class="btn btn-lg btn-white mb0" href="#">View More</a>
 					</div>
 				</div>
-
+				<!--end of row-->
 			</div>
-
+			<!--end of container-->
 		</section>
+
+		<section class="image-bg bg-dark parallax overlay pt160 pb160 pt-xs-40 pb-xs-40">
+			<div class="background-image-holder">
+				<img alt="Background Image" class="background-image" src="https://images.pexels.com/photos/1896021/pexels-photo-1896021.jpeg" />
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<h2 class="uppercase mb8">Associations</h2>
+						<p class="lead mb40">A brief description of the tour.</p>
+						<a class="btn btn-lg btn-white mb0" href="#">View More</a>
+					</div>
+				</div>
+				<!--end of row-->
+			</div>
+			<!--end of container-->
+		</section>
+
+		<section class="image-bg bg-dark parallax overlay pt160 pb160 pt-xs-40 pb-xs-40">
+			<div class="background-image-holder">
+				<img alt="Background Image" class="background-image" src="img/usecase_school.jpg" />
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<h2 class="uppercase mb8">Education Centers</h2>
+						<p class="lead mb40">A brief description of the tour.</p>
+						<a class="btn btn-lg btn-white mb0" href="#">View More</a>
+					</div>
+				</div>
+				<!--end of row-->
+			</div>
+			<!--end of container-->
+		</section>
+
+		<section class="image-bg bg-dark parallax overlay pt160 pb160 pt-xs-40 pb-xs-40">
+			<div class="background-image-holder">
+				<img alt="Background Image" class="background-image" src="https://images.pexels.com/photos/159935/pexels-photo-159935.jpeg" />
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<h2 class="uppercase mb8">Non-profits</h2>
+						<p class="lead mb40">A brief description of the tour.</p>
+						<a class="btn btn-lg btn-white mb0" href="#">View More</a>
+					</div>
+				</div>
+				<!--end of row-->
+			</div>
+			<!--end of container-->
+		</section>
+
 		<section>
 			<div class="container">
 				<div class="row">

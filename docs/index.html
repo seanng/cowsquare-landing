@@ -29,16 +29,17 @@
 			height: 75px;
 		}
 
-		.jumbotron.overlay:before {
-			opacity: 0.1;
+		.site-cover.overlay:before {
+			background-color: rgba(255,255,255,1);
+			/* opacity: 0.1; */
 		}
 
 		.image-square .background-image-holder {
 			background-position-x: 0 !important;
 		}
 
-		.jumbotron {
-			height: 100vh;
+		.image-square > .content {
+			padding: 0 5%;
 		}
 
 		@media (max-width: 767px) {
@@ -387,26 +388,47 @@
 	</div>
 
 	<div class="main-container">
-		<section class="jumbotron image-bg overlay pt240 pb240 pt-xs-180 pb-xs-180 parallax">
+			<section class="site-cover overlay image-bg parallax pt240 pb180 pt-xs-80 pb-xs-80">
+				<div class="background-image-holder">
+						<img alt="image" class="background-image" src="img/main_bg.jpg" />
+				</div>
+				<div class="container">
+						<div class="row">
+								<div class="col-md-8 col-sm-12">
+										<h1 class="color-black">Databases,
+												<br /> with superpowers.</h1>
+										<p class="lead color-black mb48 mb-xs-32">
+												We create magical database systems that are 
+												<br />highly customized for organizations and communities
+										</p>
+								</div>
+						</div>
+						<!--end of row-->
+				</div>
+				<!--end of container-->
+		</section>
+
+
+		<!-- <section class="jumbotron image-bg overlay pt240 pb240 pt-xs-180 pb-xs-180 parallax">
 			<div class="background-image-holder">
 				<img alt="image" class="background-image" src="img/main_bg.jpg">
 			</div>
 			<div class="container pb0 pt40 pt-xs-24">
 				<div class="row">
 					<div class="col-sm-5 col-xs-6">
-						<h1 class="mb0 thin color-black">A central source of truth for your team.</h1>
+						<h2 class="mb0 color-black">Your team’s central source of truth.</h2>
+						<p class="lead color-black">We create magical database systems that are highly customized for organizations and communities</p>
 					</div>
 				</div>
 
 			</div>
 
-		</section>
+		</section> -->
 
-		<section class="pt96 pb96 pt-xs-80">
+		<!-- <section class="pt96 pb96 pt-xs-80">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
-						<!-- <h1 class="text-center thin mb40">Who are we?</h1> -->
 						<h3 class="mb48">
 							Cow Square brings <span class="color-primary">clarity</span> to your team.
 						</h3>
@@ -414,234 +436,107 @@
 							As database experts, we understand that there is no one-size-fits-all system for every organization. With that mantra, we’ve created a highly customized and feature-rich database system. We want to create the perfect record management system for your organization. 
 						</p>
 						<p class="lead text-justify">
-							Cow Square is a part of Branch8, a <b>Y Combinator 2015</b> company. Y Combinator is the world’s leading accelerator, who of which have also backed the likes of Airbnb, Dropbox and Stripe.
+							Cow Square is powered by <b>Branch8</b> and is a <b>Y Combinator</b> backed company. Y Combinator is the world’s leading accelerator. They ahve also backed the likes of Airbnb, Dropbox and Stripe to name a few.
 						</p>
 					</div>
 				</div>
 			</div>
-		</section>
-		<section class="pt240 pb240 pt-xs-80 pb-xs-80 parallax hidden-xs">
-			<div class="background-image-holder fadeIn" style="transform: translate3d(0px, 149.5px, 0px); background: url(&quot;img/music2.jpg&quot;);">
-					<img alt="image" class="background-image" src="img/capital3.jpg" style="display: none;">
-			</div>
-		</section>
-		<section class="image-square right mb48 pb80 mt80">
-			<div class="col-md-6 image">
-				<div class="background-image-holder">
-					<img alt="image" class="background-image" src="img/profile management@2x.png">
-				</div>
-			</div>
-			<div class="col-md-6 content">
-					<h2>Profile Management System<br></h2>
-					<p class="mb0 lead">Branch8 helps community-based companies display their database of information on
-						their
-						own websites that are publicly or privately available.
-						<br>
-						<br>
-						Database such as members, customers orevents.
-					</p>
-			</div>
-		</section>
-		<!-- <section class="image-square left">
-			<div class="col-md-6 image">
-				<div class="background-image-holder">
-					<img alt="image" class="background-image" src="img/profile management@2x.png">
-				</div>
-			</div>
-			<div class="col-md-6 col-md-offset-1 content">
-					<h2>Ecommerce Software Development<br></h2>
-					<p class="mb0 lead">We also help organizations to design and build websites with payments and shopping
-						carts.<br>
-					</p>
-				
-			</div>
 		</section> -->
-		<section class="pb0 mt40">
+
+		<section>
 			<div class="container">
-				<div class="row">
-					<div class="col-sm-10 col-sm-offset-1 text-center">
-						<h3 class="uppercase mb40 mb-xs-24 color-primary">Features</h3>
-					</div>
-				</div>
-
-			</div>
-
-		</section>
-		<section class="pt24 pb0">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4 col-sm-6">
-						<div class="feature feature-3 mb-xs-24 mb64">
-							<div class="left">
-								<i class="et-line-adjustments icon-sm"></i>
-							</div>
-							<div class="right">
-								<h5 class="uppercase mb16">Tailored solution per case</h5>
-								<p class="lead">
-									We understand that every organization is different, so we’ll take a deep dive into
-									understanding how your organization manages its data and devise the best custom
-									solution for you.
-								</p>
-							</div>
+				<div class="row v-align-children">
+					<div class="col-sm-4 col-md-offset-1 mb-xs-24">
+						<h2 class="mb64 mb-xs-32">Why Cow Square?</h2>
+						<div class="mb40 mb-xs-24">
+							<h5 class="uppercase bold mb16">Bring Clarity to your team</h5>
+							<p class="fade-1-4">
+									As database experts, we understand that there is no one-size-fits-all system for every organization. With that mantra, we’ve created a highly customized and feature-rich database system. We want to create the perfect record management system for your organization. 
+							</p>
 						</div>
-
-					</div>
-
-					<div class="col-md-4 col-sm-6">
-						<div class="feature feature-3 mb-xs-24 mb64">
-							<div class="left">
-								<i class="et-line-envelope icon-sm"></i>
-							</div>
-							<div class="right">
-								<h5 class="uppercase mb16">Email automation<br></h5>
-								<p class="lead">
-									Save time and hassle by simply selecting the profile records of emails you wish to
-									send to, along with the fields you wish to include in your email, to quickly send
-									customized curated emails in bulk.
-								</p>
-							</div>
+						<div class="mb40 mb-xs-24">
+							<h5 class="uppercase bold mb16">Y Combinator Backed</h5>
+							<p class="fade-1-4">
+									Cow Square is powered by <b>Branch8</b> and is a <b>Y Combinator</b> backed company. Y Combinator is the world’s leading accelerator. They have also backed the likes of Airbnb, Dropbox and Stripe to name a few.
+							</p>
 						</div>
 					</div>
-
-					<div class="col-md-4 col-sm-6">
-						<div class="feature feature-3 mb-xs-24 mb64">
-							<div class="left">
-								<i class="et-line-browser icon-sm"></i>
-							</div>
-							<div class="right">
-								<h5 class="uppercase mb16">Database as a website<br></h5>
-								<p class="lead">
-									We can automatically generate a directory, an events listing, a news feed or any
-									kind of website by using data you’ve already stored in the database. No coding
-									skills necessary.
-								</p>
-							</div>
-						</div>
+					<div class="col-sm-5 col-sm-6 col-sm-offset-1 text-center">
+						<img alt="Screenshot" src="img/profile management@2x.png" />
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="pt0">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4 col-sm-6">
-						<div class="feature feature-3 mb-xs-24 mb64">
-							<div class="left">
-								<i class="et-line-clipboard icon-sm"></i>
-							</div>
-							<div class="right">
-								<h5 class="uppercase mb16">Intake form</h5>
-								<p class="lead">
-									Create a custom form for others to fill out, and simply watch while the data gets
-									magically added to your database.
-								</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-4 col-sm-6">
-						<div class="feature feature-3 mb-xs-24">
-							<div class="left">
-								<i class="et-line-documents icon-sm"></i>
-							</div>
-							<div class="right">
-								<h5 class="uppercase mb16">PDF generation<br></h5>
-								<p class="lead">
-									Instantly generate a custom report, invoice, or newsletter by simply selecting a few
-									records from your database and clicking “Generate PDF”.
-								</p>
-							</div>
-						</div>
-
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class="feature feature-3 mb-xs-24">
-							<div class="left">
-								<i class="et-line-profile-male icon-sm"></i>
-							</div>
-							<div class="right">
-								<h5 class="uppercase mb16">Access levels per user</h5>
-								<p class="lead">
-									Create custom read, write and edit permissions for stakeholders across your
-									organization, on a per-user or per-role basis.
-								</p>
-							</div>
-						</div>
-
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="image-bg bg-dark parallax overlay pt160 pb160 pt-xs-40 pb-xs-40">
+		<section class="page-title page-title-3 image-bg overlay parallax">
 			<div class="background-image-holder">
-				<img alt="Background Image" class="background-image" src="https://images.pexels.com/photos/325876/pexels-photo-325876.jpeg" />
+				<img alt="Background Image" class="background-image" src="img/cover15.jpg" />
 			</div>
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12 text-center">
-						<h2 class="uppercase mb8">Businesses</h2>
-						<p class="lead mb40">A brief description of the tour.</p>
-						<a class="btn btn-lg btn-white mb0" href="#">View More</a>
+						<h3 class="uppercase mb0">Features</h3>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="image-square right mb48 pb80 mt80">
+			<div class="col-md-7 image">
+				<div class="background-image-holder">
+					<img alt="image" class="background-image" src="img/profile management@2x.png">
+				</div>
+			</div>
+			<div class="col-md-5 content">
+				<h3>Tailored solutions for you</h3>
+				<p class="">We understand that every organization is different, so we’ll take a deep dive into understanding how your
+						organization manages its data and devise the best solution for you.
+				</p>
+			</div>
+		</section>
+		<section>
+			<div class="container">
+				<div class="row v-align-children">
+					<div class="col-md-7 col-sm-6 text-center mb-xs-24">
+						<img class="cast-shadow" alt="Screenshot" src="img/demo_email_pdf.gif" />
+					</div>
+					<div class="col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-1">
+						<h3 mb16>Save the Hassle</h3>
+						<h6 class="uppercase mt32 mb8">
+							Send Emails in Bulk
+						</h6>
+						<p>
+							Bulk send customized emails to your database of users. 
+						</p>
+						<h6 class="uppercase mb8">
+							Generate PDFs
+						</h6>
+						<p>
+							Generate invoices, reports and newsletters in customized formats.
+						</p>
 					</div>
 				</div>
 				<!--end of row-->
 			</div>
 			<!--end of container-->
 		</section>
-
-		<section class="image-bg bg-dark parallax overlay pt160 pb160 pt-xs-40 pb-xs-40">
-			<div class="background-image-holder">
-				<img alt="Background Image" class="background-image" src="https://images.pexels.com/photos/1896021/pexels-photo-1896021.jpeg" />
-			</div>
+		<section>
 			<div class="container">
-				<div class="row">
-					<div class="col-sm-12 text-center">
-						<h2 class="uppercase mb8">Associations</h2>
-						<p class="lead mb40">A brief description of the tour.</p>
-						<a class="btn btn-lg btn-white mb0" href="#">View More</a>
+				<div class="row v-align-children">
+					<div class="col-md-4 col-sm-5 mb-xs-24">
+						<h3>Intake Forms</h3>
+						<p>
+							Create customized forms for users to fill out and log it automatically onto the database.
+						</p>
+					</div>
+					<div class="col-md-7 col-md-offset-1 col-sm-6 col-sm-offset-1 text-center">
+						<img class="cast-shadow" alt="Screenshot" src="img/demo_intake_form.gif" />
 					</div>
 				</div>
 				<!--end of row-->
 			</div>
 			<!--end of container-->
 		</section>
-
-		<section class="image-bg bg-dark parallax overlay pt160 pb160 pt-xs-40 pb-xs-40">
-			<div class="background-image-holder">
-				<img alt="Background Image" class="background-image" src="img/usecase_school.jpg" />
-			</div>
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-12 text-center">
-						<h2 class="uppercase mb8">Education Centers</h2>
-						<p class="lead mb40">A brief description of the tour.</p>
-						<a class="btn btn-lg btn-white mb0" href="#">View More</a>
-					</div>
-				</div>
-				<!--end of row-->
-			</div>
-			<!--end of container-->
-		</section>
-
-		<section class="image-bg bg-dark parallax overlay pt160 pb160 pt-xs-40 pb-xs-40">
-			<div class="background-image-holder">
-				<img alt="Background Image" class="background-image" src="https://images.pexels.com/photos/159935/pexels-photo-159935.jpeg" />
-			</div>
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-12 text-center">
-						<h2 class="uppercase mb8">Non-profits</h2>
-						<p class="lead mb40">A brief description of the tour.</p>
-						<a class="btn btn-lg btn-white mb0" href="#">View More</a>
-					</div>
-				</div>
-				<!--end of row-->
-			</div>
-			<!--end of container-->
-		</section>
-
 		<section>
 			<div class="container">
 				<div class="row">

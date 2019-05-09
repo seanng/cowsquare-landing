@@ -69,6 +69,15 @@
 			.feature-3 .icon-sm {
 				font-size: 32px;
 			}
+
+			.xs-reverse {
+				display: flex !important;
+				flex-direction: column-reverse !important;
+			}
+
+			.xs-hide {
+				display: none;
+			}
 		}
 	</style>
 </head>
@@ -461,7 +470,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-sm-5 col-sm-6 col-sm-offset-1 text-center">
+					<div class="col-sm-5 col-sm-6 col-sm-offset-1 text-center xs-hide">
 						<img alt="Screenshot" src="img/profile management@2x.png" />
 					</div>
 				</div>
@@ -481,9 +490,10 @@
 			</div>
 		</section>
 
-		<section class="image-square right mb48 pb48 mt80">
+		<section class="image-square right mt80 mb48" style="padding-bottom: 0;">
 			<div class="col-md-7 image">
 				<div class="background-image-holder">
+					<!-- TODO: change to jpg. -->
 					<img alt="image" class="background-image" src="img/profile management@2x.png">
 				</div>
 			</div>
@@ -494,9 +504,10 @@
 				</p>
 			</div>
 		</section>
-		<section class="pb48 pt48">
+		
+		<section class="pt48 pb48">
 			<div class="container">
-				<div class="row v-align-children">
+				<div class="row v-align-children xs-reverse">
 					<div class="col-md-7 col-sm-6 text-center mb-xs-24">
 						<img class="cast-shadow" alt="Screenshot" src="img/demo-email-pdf.webp" />
 					</div>
@@ -537,7 +548,7 @@
 		</section>
 		<section class="pb48 pt48">
 			<div class="container">
-				<div class="row v-align-children">
+				<div class="row v-align-children xs-reverse">
 					<div class="col-md-7 col-sm-6 text-center mb-xs-24">
 						<img alt="Screenshot" src="img/demo-integrations.jpg" />
 					</div>
